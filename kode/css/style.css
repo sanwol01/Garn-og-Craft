@@ -7,6 +7,24 @@
 /*---------------Header & Navigation-----------------*/
 
 
+header nav{
+    display: none;
+}
+header nav ul li{
+    list-style-type: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    
+}
+
+header nav ul li a:active{
+    text-decoration: none;
+    
+}
+
+
 
 /*---------------Hovedindhold-----------------*/
 h1{
