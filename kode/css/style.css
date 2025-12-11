@@ -6,25 +6,48 @@
 
 /*---------------Header & Navigation-----------------*/
 
+header{
+    background-color: #f7f5ec;
+}
 
 header nav{
     display: none;
 }
-header nav ul li{
-    list-style-type: none;
-}
 
-header nav ul li a{
-    text-decoration: none;
+
+
+#bars{
+    font-size: 50px;
+    background-color: transparent;
+    border: none;
+    color: #233D4D;
+    display: flex;
+    justify-self: right;
+    padding-bottom: 0.5em;
     
 }
 
-header nav ul li a:active{
-    text-decoration: none;
-    
+.show{
+    display: block;
+    position: absolute;
+    top: 120px;
+    left: 0; 
+    background-color: #233D4D;
+    width: 100%;
 }
 
+.menu{
+    list-style: none;
+    padding: 1em;
+    padding-left: 2em;
+}
 
+.menu li a{
+    font-size: 32px;
+    text-decoration: none;
+    color: white;
+    line-height: 1.8em;
+}
 
 /*---------------Hovedindhold-----------------*/
 h1{
@@ -34,8 +57,25 @@ h1{
 
 
 /*---------------Footer-----------------*/
-
+footer{
+    background-color: #233D4D;
+    height: 10em;
+}
 
 
 
 /*---------------Responsivitet-----------------*/
+
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav ul li{
+    list-style-type: none;
+    
+}
