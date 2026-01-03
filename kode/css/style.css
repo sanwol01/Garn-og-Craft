@@ -61,6 +61,7 @@ header nav{
     background-image: url(../img/banner-eksempel.jpg);
     background-size: cover;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .velkomst{ 
@@ -163,18 +164,28 @@ h1{
     background-color: #7FAE9E;
     height: 450px;
     width: 100vw;
+    margin-bottom: 20px;
   }
 
    .events{
-    background-color: #7FAE9E;
+    background-color: #B2CB96;
     height: 450px;
     width: 100vw;
+     margin-bottom: 20px;
   }
 
   .kits{
-    background-color: #7FAE9E;
+    background-color: #FBD367;
     height: 450px;
     width: 100vw;
+     margin-bottom: 20px;
+  }
+
+  .broderi{
+    background-color: #FD9753;
+    height: 450px;
+    width: 100vw;
+     margin-bottom: 20px;
   }
 
 
