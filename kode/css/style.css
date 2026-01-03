@@ -159,6 +159,25 @@ h1{
     transform: translateY(4px);
   }
 
+  .garn{
+    background-color: #7FAE9E;
+    height: 450px;
+    width: 100vw;
+  }
+
+   .events{
+    background-color: #7FAE9E;
+    height: 450px;
+    width: 100vw;
+  }
+
+  .kits{
+    background-color: #7FAE9E;
+    height: 450px;
+    width: 100vw;
+  }
+
+
 /*---------------Footer-----------------*/
 footer{
     background-color: #233D4D;
