@@ -30,7 +30,7 @@ header nav{
 .show{
     display: block;
     position: absolute;
-    top: 120px;
+    top: 100px;
     left: 0; 
     background-color: #233D4D;
     width: 100%;
