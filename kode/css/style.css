@@ -52,11 +52,10 @@ header nav{
 
 /*---------------Hovedindhold-----------------*/
 .banner{
-    width: 100vw;
-    height: auto;
+    width: 100%;
+    height: 250px;
     background-image: url(../img/banner-eksempel.jpg);
-    background-position: cover;
-    background-position: center;
+    background-size: cover;
      
 }
 
@@ -65,10 +64,19 @@ header nav{
     color: black;
     width: 80vw;
     height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
 }
 
 h1{
     font-size: 64px bold;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.2em;
+}
+
+.banner div p{
     text-align: center;
 }
 
