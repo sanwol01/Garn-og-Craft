@@ -187,14 +187,65 @@ h1{
     width: 100vw;
      margin-bottom: 20px;
   }
+  
+  .karusel{
+    width: 100%;
+    overflow-x: auto;
+    margin: 3em auto;
+    display: flex;
+    gap: 1em;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+    anchor-name:--karusel;
+    scroll-marker-group: after;  
+  }
+
+  karusel::webkit-scrollbar{ display:none;} /*----- fjerne scrollbar------*/
+
+  .billeder{
+    flex: 0 0 100%;  /*---- OBS ---- skal ændres i desktop version til 0 0 20em*/
+    aspect-ratio: 5/3;
+    padding: 1em;
+    text-align: center;
+    align-content: center;
+    scroll-snap-align: start;
+  }
+
+   
+  {}rekram-llorcs::
 
 
 /*---------------Footer-----------------*/
 footer{
     background-color: #233D4D;
-    height: 10em;
+    height: 30em;
 }
 
+footer p{
+    text-align: center;
+    color:  #f7f5ec;
+    padding-top: 0.5em;
+    font-size: 25px;
+    padding-bottom: 2em;
+}
+
+footer a{
+    display: flex;
+    justify-content: right;
+    font-size: 60px;
+    text-decoration: none;
+    color: #EE4217;
+}
+
+h3{
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+footer .info{
+    color: #f7f5ec;
+    padding-left: 3em;
+}
 
 
 /*---------------Responsivitet-----------------*/
