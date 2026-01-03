@@ -211,17 +211,25 @@ h1{
     scroll-snap-align: start;
   }
 
-   
-  {}rekram-llorcs::
+  .billeder::scroll-marker{
+    content:'';
+    height: 1em;
+    width: 1em;
+    background-color: #EE4217;
+    border-radius: 50%;
+  }
 
 
-/*---------------Footer-----------------*/
+
+
+  /*---------------Footer-----------------*/
+  
 footer{
     background-color: #233D4D;
-    height: 30em;
+    height: 50em;
 }
 
-footer p{
+.footerslogan{
     text-align: center;
     color:  #f7f5ec;
     padding-top: 0.5em;
@@ -247,6 +255,14 @@ footer .info{
     padding-left: 3em;
 }
 
+footer .kontakt{
+    color: #f7f5ec;
+    padding-left: 3em;
+}
+
+address{
+    padding-bottom: 0.4em;
+}
 
 /*---------------Responsivitet-----------------*/
 
