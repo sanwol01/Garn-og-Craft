@@ -47,6 +47,7 @@ header nav{
     text-decoration: none;
     color: white;
     line-height: 1.8em;
+    
 }
 
 /*---------------Hovedindhold-----------------*/
@@ -67,6 +68,9 @@ footer{
 /*---------------Responsivitet-----------------*/
 
 
+@media screen and (min-width: 769px) {
+
+
 header ul{
     display: flex;
     flex-direction: row;
@@ -78,4 +82,5 @@ header ul{
 header nav ul li{
     list-style-type: none;
     
+}
 }
