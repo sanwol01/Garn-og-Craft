@@ -224,12 +224,14 @@ h1{
   }
 
   .karusel::scroll-button(right){
-    content: '&rarr;';
+    content: 'right';
   }
 
 
 
+/*<i class="fa-solid fa-arrow-left"></i>*/
 
+/*<i class="fa-solid fa-arrow-right"></i>*/
 
 
 
