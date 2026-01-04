@@ -178,24 +178,36 @@ h2{
 
    .events{
     background-color: #B2CB96;
-    height: 450px;
+    height: 600px;
     width: 100vw;
      margin-bottom: 20px;
   }
+
+  .events p{
+    padding-left: 0.8em;
+}
 
   .kits{
     background-color: #FBD367;
-    height: 450px;
+    height: 620px;
     width: 100vw;
      margin-bottom: 20px;
   }
 
+  .kits p{
+    padding-left: 0.8em;
+}
+
   .broderi{
     background-color: #FD9753;
-    height: 450px;
+    height: 600px;
     width: 100vw;
      margin-bottom: 20px;
   }
+
+  .broderi p{
+    padding-left: 0.8em;
+}
   
   .karusel{
     width: 100%;
