@@ -215,9 +215,20 @@ h1{
     content:'';
     height: 1em;
     width: 1em;
-    background-color: #EE4217;
+    background-color: #B2CB96;
     border-radius: 50%;
   }
+
+  .billeder::scroll-marker:target-current{
+    background-color: #EE4217;
+  }
+
+  .karusel::scroll-button(right){
+    content: '&rarr;';
+  }
+
+
+
 
 
 
@@ -226,7 +237,7 @@ h1{
   
 footer{
     background-color: #233D4D;
-    height: 50em;
+    height: 40em;
 }
 
 .footerslogan{
@@ -242,7 +253,7 @@ footer a{
     justify-content: right;
     font-size: 60px;
     text-decoration: none;
-    color: #EE4217;
+    color: #f7f5ec;
 }
 
 h3{
@@ -258,10 +269,24 @@ footer .info{
 footer .kontakt{
     color: #f7f5ec;
     padding-left: 3em;
+    padding-bottom: 2em;
 }
 
 address{
     padding-bottom: 0.4em;
+}
+
+.some{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-top: 2em;
+}
+
+.footerlogo{
+    height: 120px;
+    width: 120px;
+    margin-left: 0.5em;
 }
 
 /*---------------Responsivitet-----------------*/
