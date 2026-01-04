@@ -8,6 +8,9 @@
 
 header{
     background-color: #f7f5ec;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 header nav{
@@ -29,6 +32,7 @@ header nav{
     display: flex;
     justify-self: right;
     padding-bottom: 0.5em;
+    padding-top: 0.5em;
     
 }
 
