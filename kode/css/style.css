@@ -135,6 +135,7 @@ h1{
     border-radius: 10px;
     box-shadow: -5px  5px #233D4D;
     padding-top: 0.2em;
+    margin-top: 30px;
   }
 
 .cta1:active{
@@ -158,6 +159,7 @@ h1{
     border-radius: 10px;
     box-shadow: -5px  5px #233D4D;
     padding-top: 0.2em;
+    margin-top: 30px;
   }
 
 .cta2:active{
@@ -172,7 +174,7 @@ h2{
 
   .garn{
     background-color: #7FAE9E;
-    height: 600px;
+    height: 620px;
     width: 100vw;
     margin-bottom: 20px;
   }
@@ -194,7 +196,7 @@ h2{
 
   .kits{
     background-color: #FBD367;
-    height: 620px;
+    height: 640px;
     width: 100vw;
      margin-bottom: 20px;
   }
@@ -205,7 +207,7 @@ h2{
 
   .broderi{
     background-color: #FD9753;
-    height: 600px;
+    height: 620px;
     width: 100vw;
      margin-bottom: 20px;
   }
@@ -221,12 +223,12 @@ h2{
     display: flex;
     gap: 1em;
     scroll-behavior: smooth;
-    scroll-snap-type: mandatory;
-    anchor-name:--karusel;
+    scroll-snap-type: x mandatory;
+    anchor-name: --karusel;
     scroll-marker-group: after;  
   }
 
-  .karusel::webkit-scrollbar{ display:none;} /*----- fjerne scrollbar------*/
+  .karusel::webkit-scrollbar{ display:none;}
 
   .billeder img{
     height: 340px;
@@ -243,20 +245,28 @@ h2{
   }
 
   .billeder::scroll-marker{
-    content:'o';
+    content:''; 
     height: 1em;
     width: 1em;
-    text-decoration: none; /*--------------------------------------------*/
-    background-color: #B2CB96;
+    background-color: #233D4D;
+    opacity: 0.4;
     border-radius: 50%;
+    transform: translateY(-100%);
   }
 
   .billeder::scroll-marker:target-current{
-    background-color: #EE4217;
+    opacity: 1;
+  }
+
+  .karusel::scroll-marker-group{
+    display:flex;
+    justify-content: center;
+    gap: 1em;
   }
 
   .karusel::scroll-button(right){
-    content: '>';
+   /* content: '→'; */
+    content: '→'; 
     background-color: #233D4D;
     color: #f7f5ec;
     font-weight: bold;
@@ -264,6 +274,7 @@ h2{
     font-size:1rem;
     height: 40px;
     width: 40px;
+    border: none;
     border-radius: 50%;
    /* padding-bottom: 1em;*/
     cursor: pointer;
@@ -274,7 +285,7 @@ h2{
   }
 
   .karusel::scroll-button(left){
-    content: '<';
+    content: '←';
     background-color: #233D4D;
     color: #f7f5ec;
     font-weight: bold;
@@ -283,6 +294,7 @@ h2{
     height: 40px;
     width: 40px;
     border-radius: 50%;
+    border: none;
    /* padding-bottom: 1em;*/
     cursor: pointer;
     position: fixed;
