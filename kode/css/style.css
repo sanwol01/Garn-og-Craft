@@ -160,12 +160,21 @@ h1{
     transform: translateY(4px);
   }
 
+h2{
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+}
+
   .garn{
     background-color: #7FAE9E;
-    height: 450px;
+    height: 600px;
     width: 100vw;
     margin-bottom: 20px;
   }
+
+.garn p{
+    padding-left: 0.8em;
+}
 
    .events{
     background-color: #B2CB96;
@@ -191,7 +200,7 @@ h1{
   .karusel{
     width: 100%;
     overflow-x: auto;
-    margin: 3em auto;
+    margin: 1em auto;
     display: flex;
     gap: 1em;
     scroll-behavior: smooth;
@@ -201,6 +210,11 @@ h1{
   }
 
   karusel::webkit-scrollbar{ display:none;} /*----- fjerne scrollbar------*/
+
+  .billeder img{
+    height: 340px;
+    width: 340px;
+  }
 
   .billeder{
     flex: 0 0 100%;  /*---- OBS ---- skal ændres i desktop version til 0 0 20em*/
@@ -212,9 +226,10 @@ h1{
   }
 
   .billeder::scroll-marker{
-    content:'';
+    content:'o';
     height: 1em;
     width: 1em;
+    text-decoration: none; /*--------------------------------------------*/
     background-color: #B2CB96;
     border-radius: 50%;
   }
@@ -224,7 +239,45 @@ h1{
   }
 
   .karusel::scroll-button(right){
-    content: 'right';
+    content: '>';
+    background-color: #B2CB96;
+    color: #233D4D;
+    font-size:1rem;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+   /* padding-bottom: 1em;*/
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --karusel;
+    position-area:right center;
+    translate: -50%;
+  }
+
+  .karusel::scroll-button(left){
+    content: '<';
+    background-color: #B2CB96;
+    color: #233D4D;
+    font-size: 3rem;
+    height: 60px;
+    width:60px;
+    border-radius: 50%;
+    padding-bottom: 1em;
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --karusel;
+    position-area:left center;
+    translate: 50%;
+  }
+
+  .karusel::scroll-button(right):disabled{
+    opacity: 0.5;
+    cursor: auto;
+  }
+
+   .karusel::scroll-button(left):disabled{
+    opacity: 0.5;
+    cursor: auto;
   }
 
 
@@ -258,7 +311,7 @@ footer a{
     color: #f7f5ec;
 }
 
-h3{
+h4{
     padding-top: 1em;
     padding-bottom: 0.5em;
 }
