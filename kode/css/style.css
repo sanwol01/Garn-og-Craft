@@ -4,7 +4,7 @@
     font-family: "Quicksand", sans-serif;
 }
 
-/*---------------Header & Navigation-----------------*/
+/*--------------- Header & Navigation -----------------*/
 
 header{
     background-color: #f7f5ec;
@@ -59,7 +59,7 @@ header nav{
     line-height: 1.8em;
 }
 
-/*---------------Hovedindhold-----------------*/
+/*--------------- Hovedindhold til forsiden -----------------*/
 
 body{
   background-color: #f7f5ec;
@@ -321,9 +321,29 @@ h2{
 
 /*<i class="fa-solid fa-arrow-right"></i>*/
 
+   /*------------------- Hovedindhold til Kalender siden -------------------------*/
 
+.kalenderbanner{
+  background-image: url(../img/kalender\ credit\ -\ golubovy.png);
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 20px;
+  background-color: #f7f5ec;
+}
 
-  /*---------------Footer-----------------*/
+.kalendertitel{
+  text-align: center;
+  padding-top: 2.5em;
+}
+
+.detailsgul{
+  background-color: #FBD367;
+  text-decoration: none;
+}
+
+/*--------------- Footer -----------------*/
   
 footer{
     background-color: #233D4D;
