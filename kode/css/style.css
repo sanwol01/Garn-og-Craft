@@ -65,6 +65,8 @@ header nav{
   align-content: center;
   color: black;
   padding-left: 0px;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
 }
 
 .breadcrumbs ul {
