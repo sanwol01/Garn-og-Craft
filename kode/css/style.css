@@ -236,8 +236,8 @@ h2{
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    color: black;
-    background-color: #B2CB96;
+    color: #233D4D;
+    background-color: #EE4217;
     border: none;
     border-radius: 10px;
     box-shadow: -5px  5px #233D4D;
@@ -680,6 +680,8 @@ header nav ul li{
   display: none;
 }
 
+
+/*
 body{
   display: grid;
   grid-template-columns: 1fr  1fr;
@@ -698,6 +700,9 @@ body{
     row-gap: 20px;
 
 }
+*/
+
+
   .banner{
    width: 100vw;
    height: 600px;
@@ -709,4 +714,200 @@ body{
     width: 50vw;
     padding-top: 1em;
   }
+
+  .klub{
+    width: 100vw;
+  padding: 2em;
+  grid-area: klub;
+}
+
+
+
+  .cta5{
+    width: 0%;
+    height: 35px;
+    display: block;
+    margin: 10px auto;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #233D4D;
+    background-color: #FE7F2D;
+    border: none;
+    border-radius: 10px;
+    box-shadow: -5px  5px #233D4D;
+    padding-top: 0.2em;
+    margin-top: 30px;
+    margin-right: 0;
+  }
+
+.cta5:active{
+    box-shadow: 0px -1px #EE4217;
+    transform: translateY(4px);
+  }
+
+  .samling{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+   overflow: scroll;
+  scrollbar-color: rgba(0, 0, 0, 0);
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+    .garn{
+    background-color: #7FAE9E;
+    height: 650px;
+    width: 48vw;
+    margin-bottom: 20px;
+    grid-area: garn;
+  }
+
+.garn p{
+    padding-left: 0.8em;
+}
+
+   .events{
+    background-color: #B2CB96;
+    height: 650px;
+    width: 48vw;
+    margin-bottom: 20px;
+     grid-area: events;
+  }
+
+  .events p{
+    padding-left: 0.8em;
+}
+
+.kits{
+  background-color: #FBD367;
+  height: 650px;
+  width: 48vw;
+  margin-bottom: 20px;
+  grid-area: kits;
+}
+
+.kits p{
+  padding-left: 0.8em;
+}
+
+  .broderi{
+    background-color: #FD9753;
+    height: 650px;
+    width: 48vw;
+    margin-bottom: 20px;
+    grid-area: broderi;
+  }
+
+  .broderi p{
+    padding-left: 0.8em;
+}
+
+.godjul{
+  border-top: dashed;
+  border-bottom: dashed;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  grid-area: godjul;
+}
+
+.godjul h2{
+  text-align: center;
+}
+
+.godjul p{
+  padding-left: 2em;
+  padding-bottom: 0.5em;
+  padding-top: 1em;
+}
+
+.gaveideer{
+  display: flex;
+  gap: 4%;
+  padding: 2%;
+}
+/*-------------------------------------------------------------------------------------*/
+.gaveideertext{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2%;
+  order: 2;
+}
+
+.gaveideer img{
+  order: 1;
+  height: 400px;
+  width: 880px;
+}
+
+.julesok{
+  padding-top: 1em;
+  width: 100%;
+  padding-bottom: 0.5em;
+}
+
+footer{
+    background-color: #233D4D;
+    height: 40em;
+    grid-area: footer;
+}
+
+.footerflex{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+footer a{
+    display: flex;
+    justify-content: right;
+    font-size: 60px;
+    text-decoration: none;
+    color: #f7f5ec;
+}
+
+h4{
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+footer .info{
+    color: #f7f5ec;
+    padding-left: 3em;
+}
+
+footer .kontakt{
+    color: #f7f5ec;
+    padding-left: 3em;
+    padding-bottom: 2em;
+}
+
+address{
+    padding-bottom: 0.4em;
+}
+
+.some{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-top: 2em;
+}
+
+.footerlogo{
+    height: 120px;
+    width: 120px;
+    margin-left: 0.5em;
+}
+
 }
