@@ -334,9 +334,11 @@ h2{
     justify-content: center;
     gap: 1em;
   }
+/* content: '→'; */
 
+/*
   .karusel::scroll-button(right){
-   /* content: '→'; */
+   
     content: '→'; 
     background-color: #233D4D;
     color: #f7f5ec;
@@ -377,7 +379,7 @@ h2{
     cursor: auto;
   }
 
-  
+  /*
 
 
 /*<i class="fa-solid fa-arrow-left"></i>*/
