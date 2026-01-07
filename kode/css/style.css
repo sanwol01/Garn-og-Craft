@@ -11,6 +11,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    grid-area: header;
 }
 
 header nav{
@@ -589,6 +590,7 @@ summary{
 footer{
     background-color: #233D4D;
     height: 40em;
+    grid-area: footer;
 }
 
 .footerslogan{
@@ -659,20 +661,22 @@ header nav ul li{
     
 }
 
-main{
+body{
   display: grid;
   grid-template-columns: 1fr  1fr;
-  grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 5% 5% 1fr 1fr 1fr 1fr 1fr 1fr 5% ;
   grid-template-areas:
+    "header header"
     "studierabat studierabat"
     "banner banner"
     "klub klub"
     "garn events"
     "gaveideer gaveideer"
     "kits broderi"
-    "godjul godjul";
-    column-gap: 20px;
-    row-gap: 20px;
+    "godjul godjul"
+    "footer footer";
+   /* column-gap: 20px;
+    row-gap: 20px;*/
 }
 
   
