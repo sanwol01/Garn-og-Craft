@@ -105,17 +105,34 @@ body{
 .banner{
     width: 100%;
     height: 300px;
-    background-image: url(../img/bannerbillede2.jpeg);
+    background-image: url(../img/bannerbillede3.jpg);
     background-size: cover;
     position: relative;
     margin-bottom: 20px;
     background-color: #f7f5ec;
-    grid-area: banner;
+}
+
+.orangetekst{
+  color: #FE7F2D;
+  font-weight: bold;
+}
+
+span{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+span h2{
+
+text-align: left;
+margin-bottom: 20px;
 }
 
 section{
   margin-bottom: 2em;
 }
+
 
 .velkomst{ 
     background-color: rgba(255, 255, 255, 0.5);
@@ -145,7 +162,7 @@ h1{
     font-size: larger;
 }
 .eventknap{
-    width: 40%;
+    width: 200px;
     height: 35px;
     display: block;
     margin: 10px auto;
@@ -169,7 +186,7 @@ h1{
 
 
 .cta1{
-    width: 40%;
+    width: 200px;
     height: 35px;
     display: block;
     margin: 10px auto;
@@ -193,7 +210,7 @@ h1{
   }
 
 .cta2{
-    width: 40%;
+    width: 200px;
     height: 35px;
     display: block;
     margin: 10px auto;
@@ -208,7 +225,6 @@ h1{
     border-radius: 10px;
     box-shadow: -5px  5px #233D4D;
     padding-top: 0.2em;
-    margin-top: 30px;
   }
 
 .cta2:active{
@@ -223,11 +239,10 @@ h2{
 
 .klub{
   padding: 2em;
-  grid-area: klub;
 }
 
 .cta5{
-    width: 40%;
+    width: 200px;
     height: 35px;
     display: block;
     margin: 10px auto;
@@ -242,8 +257,7 @@ h2{
     border-radius: 10px;
     box-shadow: -5px  5px #233D4D;
     padding-top: 0.2em;
-    margin-top: 30px;
-    margin-right: 0;
+ 
   }
 
 .cta5:active{
@@ -275,7 +289,7 @@ h2{
     padding-left: 0.8em;
 }
 
-.gaveideer{
+.highlight1{
   border-top: dashed;
   border-bottom: dashed;
   margin-left: 1em;
@@ -284,19 +298,16 @@ h2{
   grid-area: gaveideer;
 }
 
-.gaveideer h2{
+.highlight1 h2{
   text-align: center;
 }
 
-.gaveideer p{
+.highlight1text p{
   padding-left: 2em;
   padding-bottom: 2em;
   padding-top: 1em;
 }
 
-.sokker{
-  width: 100%;
-}
 
 .kits{
   background-color: #FBD367;
@@ -322,7 +333,7 @@ h2{
     padding-left: 0.8em;
 }
   
-.godjul{
+.highlight2{
   border-top: dashed;
   border-bottom: dashed;
   margin-left: 1em;
@@ -331,11 +342,11 @@ h2{
   grid-area: godjul;
 }
 
-.godjul h2{
+.highlight2 h2{
   text-align: center;
 }
 
-.godjul p{
+.highlight2text p{
   padding-left: 2em;
   padding-bottom: 0.5em;
   padding-top: 1em;
@@ -524,7 +535,7 @@ summary{
 }
 
 .cta3{
-    width: 40%;
+    width: 200px;
     height: 35px;
     display: block;
     margin: 10px auto;
@@ -564,7 +575,7 @@ summary{
   }
 
   .cta4{
-    width: 40%;
+    width: 200px;
     height: 35px;
     display: block;
     margin: 10px auto;
@@ -648,7 +659,7 @@ address{
 
 @media screen and (min-width: 426px) {
 
-
+/*-------------------------- header og nav desktop--------------------------*/
 header ul{
     display: flex;
     flex-direction: row;
@@ -672,8 +683,9 @@ header nav ul li{
 }
 
 .logo{
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
+  margin: 0.5em;
 }
 
 #bars{
@@ -681,53 +693,49 @@ header nav ul li{
 }
 
 
-/*
-body{
-  display: grid;
-  grid-template-columns: 1fr  1fr;
-  grid-template-rows: 5% 5% 1fr 1fr 1fr 1fr 1fr 1fr 5%;
-  grid-template-areas:
-    "header header"
-    "studierabat studierabat"
-    "banner banner"
-    "klub klub"
-    "garn events"
-    "gaveideer gaveideer"
-    "kits broderi"
-    "godjul godjul"
-    "footer footer";
-   column-gap: 20px;
-    row-gap: 20px;
 
+/*----------------------------------- indhold desktop ------------------*/
+
+section{
+  margin-bottom: 0;
 }
-*/
 
+.studierabat{
+  padding: 0.5em;
+}
 
   .banner{
    width: 100vw;
    height: 600px;
   }
 
+
   .velkomst{
     top: 70%;
     left: 25%;
-    width: 50vw;
+    width: 40vw;
+    text-align: center;
     padding-top: 1em;
   }
 
   .klub{
-    width: 100vw;
-  padding: 2em;
-  grid-area: klub;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 500px;
+    padding: 20px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
-
   .cta5{
-    width: 0%;
+    width: 200px;
     height: 35px;
     display: block;
-    margin: 10px auto;
     font-size: 1.3em;
     font-weight: bold;
     cursor: pointer;
@@ -752,15 +760,62 @@ body{
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-   overflow: scroll;
-  scrollbar-color: rgba(0, 0, 0, 0);
-  scrollbar-width: thin;
+  overflow: scroll;
 }
 
 ::-webkit-scrollbar {
     display: none;
 }
 
+.karusel{
+    width: 100%;
+    overflow-x: auto;
+    margin: 1em auto;
+    display: flex;
+    gap: 1em;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    /*anchor-name: --karusel;
+    scroll-marker-group: after;*/  
+  }
+
+  .karusel::webkit-scrollbar{ 
+    display:none;
+  }
+
+  .billeder img{
+    height: 380px;
+    width: 380px;
+  }
+
+  .billeder{
+    flex: 0 0 20%;  
+    aspect-ratio: 5/3;
+    padding: 1em;
+    text-align: center;
+    align-content: center;
+    scroll-snap-align: start;
+  }
+
+  .billeder::scroll-marker{
+    content:''; 
+    height: 1em;
+    width: 1em;
+    background-color: #233D4D;
+    opacity: 0.4;
+    border-radius: 50%;
+    transform: translateY(-100%);
+  }
+
+  .billeder::scroll-marker:target-current{
+    opacity: 1;
+  }
+
+  .karusel::scroll-marker-group{
+    display:flex;
+    justify-content: center;
+    gap: 1em;
+  }
 
     .garn{
     background-color: #7FAE9E;
@@ -829,44 +884,94 @@ body{
   padding-top: 1em;
 }
 
-.gaveideer{
+.highlight1{
   display: flex;
   gap: 4%;
   padding: 2%;
 }
-/*-------------------------------------------------------------------------------------*/
-.gaveideertext{
+
+.highlight1text{
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 3em;
   padding-top: 2%;
   order: 2;
 }
 
-.gaveideer img{
+.highlight1text h2{
+  margin-bottom: 20px;
+}
+
+
+.highlight1 img{
   order: 1;
   height: 400px;
   width: 880px;
 }
 
-.julesok{
-  padding-top: 1em;
-  width: 100%;
-  padding-bottom: 0.5em;
+
+
+.highlight2{
+  display: flex;
+  align-items: center;
+  gap: 4%;
+  padding: 2%;
 }
 
+.highlight2text{
+  height: 400px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em;
+  order: 1;
+}
+
+.highlight2text h2{
+  margin-bottom: 20px;
+}
+
+.highlight2 img{
+  order: 2;
+  height: 400px;
+  width: 880px;
+  object-fit: cover;
+  background-color: #EE4217;
+}
+
+.julesok{
+  padding-top: 0;
+  width: 100%;
+  padding-bottom: 0;
+}
+
+/*--------------------------------  footer desktop  --------------------------*/
+
+
+
 footer{
-    background-color: #233D4D;
-    height: 40em;
-    grid-area: footer;
+  background-color: #233D4D;
+    height: 20em;
 }
 
 .footerflex{
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.praktiskinfo{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
   align-items: baseline;
+  order: 2;
+
 }
 
 footer a{
@@ -881,6 +986,7 @@ h4{
     padding-top: 1em;
     padding-bottom: 0.5em;
 }
+
 
 footer .info{
     color: #f7f5ec;
@@ -902,6 +1008,7 @@ address{
     align-items: center;
     gap: 25px;
     padding-top: 2em;
+    order: 1;
 }
 
 .footerlogo{
@@ -911,3 +1018,49 @@ address{
 }
 
 }
+
+
+/*
+  .karusel::scroll-button(right){
+   
+    content: '→'; 
+    background-color: #233D4D;
+    color: #f7f5ec;
+    font-weight: bold;
+    text-align: center;
+    font-size:1rem;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --karusel;
+    position-area:right center;
+    translate: -100%;
+  }
+
+  .karusel::scroll-button(left){
+    content: '←';
+    background-color: #233D4D;
+    color: #f7f5ec;
+    font-weight: bold;
+    text-align: center;
+    font-size:1rem;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --karusel;
+    position-area:left center;
+    translate: 100%;
+  }
+
+  .karusel::scroll-button(right):disabled, .karusel::scroll-button(left):disabled{
+    opacity: 0.2;
+    cursor: auto;
+  }
+
+  /*
