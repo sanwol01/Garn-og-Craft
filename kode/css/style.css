@@ -110,6 +110,10 @@ body{
     background-color: #f7f5ec;
 }
 
+section{
+  margin-bottom: 2em;
+}
+
 .velkomst{ 
     background-color: rgba(255, 255, 255, 0.5);
     color: black;
@@ -265,15 +269,37 @@ h2{
     padding-left: 0.8em;
 }
 
-  .kits{
-    background-color: #FBD367;
-    height: 640px;
-    width: 100vw;
-    margin-bottom: 20px;
-  }
+.gaveideer{
+  border-top: dashed;
+  border-bottom: dashed;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
 
-  .kits p{
-    padding-left: 0.8em;
+.gaveideer h2{
+  text-align: center;
+}
+
+.gaveideer p{
+  padding-left: 2em;
+  padding-bottom: 2em;
+  padding-top: 1em;
+}
+
+.sokker{
+  width: 100%;
+}
+
+.kits{
+  background-color: #FBD367;
+  height: 640px;
+  width: 100vw;
+  margin-bottom: 20px;
+}
+
+.kits p{
+  padding-left: 0.8em;
 }
 
   .broderi{
@@ -287,6 +313,30 @@ h2{
     padding-left: 0.8em;
 }
   
+.godjul{
+  border-top: dashed;
+  border-bottom: dashed;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.godjul h2{
+  text-align: center;
+}
+
+.godjul p{
+  padding-left: 2em;
+  padding-bottom: 0.5em;
+  padding-top: 1em;
+}
+
+.julesok{
+  padding-top: 1em;
+  width: 100%;
+  padding-bottom: 0.5em;
+}
+
   .karusel{
     width: 100%;
     overflow-x: auto;
@@ -582,7 +632,7 @@ address{
     margin-left: 0.5em;
 }
 
-/*---------------Responsivitet-----------------*/
+/*--------------------------------------------- Responsivitet -----------------------------------------------------*/
 
 
 @media screen and (min-width: 769px) {
@@ -599,5 +649,19 @@ header ul{
 header nav ul li{
     list-style-type: none;
     
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr  1fr;
+  grid-template-rows: 1fr 1fr ;
+  grid-template-areas:
+    "garn events"
+    "highlight1 highli"
+    "kits broderi"
+    "kits broderi";
+}
+
+  
 }
 }
