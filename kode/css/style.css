@@ -108,19 +108,44 @@ body{
     background-image: url(../img/bannerbillede3.jpg);
     background-size: cover;
     position: relative;
+    background-position: center;
     margin-bottom: 20px;
     background-color: #f7f5ec;
+}
+
+.banner h2{
+  text-align: center;
+}
+
+
+
+.velkomst{ 
+    /*background-color: rgba(255, 255, 255, 0.3);*/
+    color: black;
+    width: 300px;
+    min-height: 120px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+.banner div p{
+    text-align: center;
+    padding-bottom: 0.6em;
 }
 
 .orangetekst{
   color: #FE7F2D;
   font-weight: bold;
-}
-
-span{
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
 }
 
 span h2{
@@ -133,37 +158,6 @@ section{
   margin-bottom: 2em;
 }
 
-
-.velkomst{ 
-    /*background-color: rgba(255, 255, 255, 0.3);*/
-    color: black;
-    width: 300px;
-    min-height: 120px;
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    border-radius: 10px;
-    
-}
-
-h1{
-    font-size: 65px;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
-}
-
-.banner div p{
-    text-align: center;
-    padding-bottom: 0.6em;
-}
-
-.slogan{
-    font-style: italic;
-    font-weight: bold;
-    color: #233D4D;
-}
 .eventknap{
     width: 200px;
     height: 35px;
@@ -311,6 +305,11 @@ h2{
   padding-top: 1em;
 }
 
+.sokker{
+  padding-top: 1em;
+  width: 100%;
+  padding-bottom: 0.5em;
+}
 
 .kits{
   background-color: #FBD367;
@@ -604,7 +603,7 @@ summary{
   
 footer{
     background-color: #233D4D;
-    height: 40em;
+    height: 45em;
     grid-area: footer;
 }
 
