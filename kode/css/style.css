@@ -135,18 +135,20 @@ section{
 
 
 .velkomst{ 
-    background-color: rgba(255, 255, 255, 0.5);
+    /*background-color: rgba(255, 255, 255, 0.3);*/
     color: black;
-    width: 80vw;
+    width: 300px;
     min-height: 120px;
     position: absolute;
     top: 40%;
     left: 10%;
     border-radius: 10px;
+    
 }
 
 h1{
-    font-size: 65px bold;
+    font-size: 65px;
+    font-weight: bold;
     text-align: center;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
@@ -158,8 +160,9 @@ h1{
 }
 
 .slogan{
-    font-weight: bolder;
-    font-size: larger;
+    font-style: italic;
+    font-weight: bold;
+    color: #233D4D;
 }
 .eventknap{
     width: 200px;
@@ -711,11 +714,12 @@ section{
 
 
   .velkomst{
-    top: 70%;
+    top: 40%;
     left: 25%;
     width: 40vw;
     text-align: center;
     padding-top: 1em;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.218);
   }
 
   .klub{
