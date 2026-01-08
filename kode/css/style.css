@@ -152,10 +152,6 @@ text-align: left;
 margin-bottom: 20px;
 }
 
-section{
-  margin-bottom: 2em;
-}
-
 .eventknap{
     width: 200px;
     height: 35px;
@@ -233,7 +229,8 @@ h2{
 }
 
 .klub{
-  padding: 2em;
+  margin-bottom: 50px;
+  padding: 0 2em;
 }
 
 .cta5{
@@ -264,7 +261,7 @@ h2{
     background-color: #7FAE9E;
     height: 620px;
     width: 100vw;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     grid-area: garn;
   }
 
@@ -276,7 +273,7 @@ h2{
     background-color: #B2CB96;
     height: 600px;
     width: 100vw;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
      grid-area: events;
   }
 
@@ -289,7 +286,7 @@ h2{
   border-bottom: dashed;
   margin-left: 1em;
   margin-right: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 50px;
   grid-area: gaveideer;
 }
 
@@ -313,7 +310,7 @@ h2{
   background-color: #FBD367;
   height: 640px;
   width: 100vw;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   grid-area: kits;
 }
 
@@ -325,7 +322,7 @@ h2{
     background-color: #FD9753;
     height: 620px;
     width: 100vw;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     grid-area: broderi;
   }
 
@@ -338,7 +335,7 @@ h2{
   border-bottom: dashed;
   margin-left: 1em;
   margin-right: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 50px;
   grid-area: godjul;
 }
 
@@ -462,7 +459,7 @@ h2{
    /*------------------- Hovedindhold til Kalender siden -------------------------*/
 
 .kalenderbanner{
-  background-image: url(../img/kalender\ credit\ -\ golubovy.png);
+  background-image: url(../img/event\ banner\ credit\ golubovy.png);
   width: 100%;
   height: 200px;
   background-size: cover;
@@ -479,14 +476,8 @@ h2{
 .fællesskab{
   padding-left: 1.5em;
   padding-right: 1.5em;
-  font-weight: normal;
-}
-
-.garnklub{
-  text-align: center;
-  font-size: 35px;
-  padding-bottom: 0.5em;
-  padding-top: 0.5em;
+  font-weight: bold;
+  padding-bottom: 1em;
 }
 
 .information{
@@ -497,7 +488,12 @@ h2{
 
 .information1{
   line-height: 1.5em;
-  padding: 0 2em 1em;
+  padding-left: 2em;
+  padding-bottom: 1.5em;
+}
+
+details{
+  padding-bottom: 2em;
 }
 
 .detailsgul{
@@ -512,7 +508,6 @@ summary{
 }
 
 summary h2{
-  padding-bottom: 1.5rem;
   padding-top: 1.5rem;
 }
 
@@ -730,10 +725,6 @@ section{
   }
 
   .klub{
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;*/
     width: 600px;
     height: 500px;
     padding: 20px;
@@ -970,7 +961,7 @@ section{
 
 /*---------------------- Kalender ---------------------------*/
 .kalenderbanner{
-  background-image: url(../img/kalender\ credit\ -\ golubovy.png);
+  background-image: url(../img/event\ banner\ credit\ golubovy.png);
   width: 100vw;
   height: 500px;
   background-size: cover;
