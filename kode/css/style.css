@@ -135,6 +135,14 @@ body{
     border-radius: 10px;
 }
 
+ .kalendervelkomst{
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ 
 h1{
     font-size: 50px;
     font-weight: bold;
@@ -607,7 +615,7 @@ summary{
   
 footer{
     background-color: #233D4D;
-    height: 40em;
+    height: 42em;
     grid-area: footer;
 }
 
@@ -650,6 +658,7 @@ address{
 .some{
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     gap: 25px;
     padding-top: 2em;
 }
@@ -657,7 +666,8 @@ address{
 .footerlogo{
     height: 120px;
     width: 120px;
-    margin-left: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*--------------------------------------------- Responsivitet -----------------------------------------------------*/
