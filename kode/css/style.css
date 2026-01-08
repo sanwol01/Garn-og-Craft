@@ -719,6 +719,7 @@ header nav ul li{
 
 .hovednav a:active{
   text-decoration: underline;
+  font-weight: bold;
   
 
 }
