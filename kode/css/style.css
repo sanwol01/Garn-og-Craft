@@ -113,12 +113,6 @@ body{
     background-color: #f7f5ec;
 }
 
-.banner h2{
-  text-align: center;
-}
-
-
-
 .velkomst{ 
     /*background-color: rgba(255, 255, 255, 0.3);*/
     color: black;
@@ -136,6 +130,10 @@ h1{
     text-align: center;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
+}
+
+.banner h2{
+  text-align: center;
 }
 
 .banner div p{
@@ -249,7 +247,7 @@ h2{
     text-align: center;
     text-decoration: none;
     color: #233D4D;
-    background-color: #EE4217;
+    background-color: #FE7F2D;
     border: none;
     border-radius: 10px;
     box-shadow: -5px  5px #233D4D;
@@ -258,7 +256,7 @@ h2{
   }
 
 .cta5:active{
-    box-shadow: 0px -1px #EE4217;
+    box-shadow: 0px -1px #FE7F2D;
     transform: translateY(4px);
   }
 
@@ -713,27 +711,46 @@ section{
 
 
   .velkomst{
-    top: 40%;
-    left: 25%;
+    top: 50%;
+    left: 32%;
     width: 40vw;
     text-align: center;
     padding-top: 1em;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.218);
   }
 
+  .banner h1{
+    font-size: 80px;
+    padding: 0;
+  }
+
+  .banner h2{
+    font-size: 30px;
+    padding: 0;
+  }
+
   .klub{
-    display: flex;
+    /*display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center;*/
     width: 600px;
     height: 500px;
     padding: 20px;
-    text-align: left;
     margin-left: auto;
     margin-right: auto;
 }
 
+.klub h2{
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+.klub p{
+  line-height: 1.5em;
+  text-align: left;
+}
 
   .cta5{
     width: 200px;
