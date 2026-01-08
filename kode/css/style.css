@@ -687,7 +687,7 @@ header nav ul li{
 .logo{
   width: 180px;
   height: 180px;
-  margin: 0.5em;
+  margin: 1em;
 }
 
 #bars{
@@ -949,6 +949,22 @@ section{
   padding-top: 0;
   width: 100%;
   padding-bottom: 0;
+}
+
+/*---------------------- Kalender ---------------------------*/
+.kalenderbanner{
+  background-image: url(../img/kalender\ credit\ -\ golubovy.png);
+  width: 100vw;
+  height: 500px;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.kalendertitel{
+  text-align: center;
+  padding-top: 2.7em;
+  font-size: 80px;
 }
 
 /*--------------------------------  footer desktop  --------------------------*/
