@@ -59,6 +59,17 @@ header nav{
     color: white;
     line-height: 1.8em;
 }
+
+.ikoner{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  font-size: 2em;
+  color: #B2CB96;
+  padding: 1em 1.5em;
+}
+
 /*--------------- Brødkrummesti -----------------*/
 .breadcrumbs{
   display: flex;
@@ -665,12 +676,21 @@ header ul{
 
 header nav{
   display: flex;
-  
+  flex-direction: column;
+}
+
+nav .ikoner{
+order: 1;
+}
+
+nav .menu{
+  order: 2;
+  margin-right: 3em;
 }
 
 header nav ul li{
     list-style-type: none;
-    padding-left: 5em; 
+    padding-left: 3em; 
 }
 
 .menu li a{
@@ -687,8 +707,26 @@ header nav ul li{
   display: none;
 }
 
+.ikoner{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  font-size: 2em;
+  color: #233D4D;
+  padding: 1em 2em;
+}
 
+.hovednav a:active{
+  text-decoration: underline;
+  
 
+}
+
+.hovednav a:hover{
+  color: #FE7F2D;
+  cursor: pointer;
+}
 /*----------------------------------- indhold desktop ------------------*/
 
 section{
