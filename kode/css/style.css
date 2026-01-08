@@ -136,7 +136,6 @@ body{
 }
 
  .kalendervelkomst{
-  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -497,19 +496,17 @@ h2{
   padding-right: 1.5em;
   font-weight: bold;
   padding-bottom: 1em;
+  color: #FE7F2D;
 }
 
 .information{
-  line-height: 1.5em;
+  line-height: 2em;
   padding: 0 2em;
   padding-bottom: 0.5em;
+  text-align: left;
 }
 
-.information1{
-  line-height: 1.5em;
-  padding-left: 2em;
-  padding-bottom: 1.5em;
-}
+
 
 details{
   padding-bottom: 2em;
@@ -759,9 +756,21 @@ section{
     left: 32%;
     width: 40vw;
     text-align: center;
-    padding-top: 1em;
+    padding: 1em;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.218);
   }
+
+  .kalendervelkomst{
+  min-height: 400px;
+  height: auto;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+ }
 
   .banner h1{
     font-size: 80px;
