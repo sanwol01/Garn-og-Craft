@@ -686,8 +686,13 @@ header nav{
   flex-direction: column;
 }
 
+
 nav .ikoner{
 order: 1;
+}
+
+.ikoner i:hover{
+  color: #FE7F2D;
 }
 
 nav .menu{
