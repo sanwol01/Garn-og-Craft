@@ -728,6 +728,7 @@ header nav ul li{
 
 .menu li a{
    color: #233D4D;
+   white-space: nowrap;
 }
 
 .logo{
@@ -795,17 +796,22 @@ section{
  }
 
   .banner h1{
-    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    font-size: clamp(55px, 80px, 100px);
     padding: 0;
     white-space: nowrap;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+   
   }
 
   .banner h2{
-    font-size: 30px;
+    font-size: clamp (15px, 30px 45px);
     padding: 0;
     white-space: nowrap;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
   }
 
   .klub{
