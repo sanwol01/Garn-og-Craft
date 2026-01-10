@@ -178,7 +178,7 @@ text-align: left;
 margin-bottom: 20px;
 }
 
-.eventknap{
+#eventknap{
     width: 200px;
     height: 35px;
     display: block;
@@ -193,12 +193,17 @@ margin-bottom: 20px;
     border: none;
     border-radius: 10px;
     box-shadow: -5px  5px #EE4217;
-    padding-top: 0.2em;
+    
+    cursor: pointer;
   }
 
-.eventknap:active{
+#eventknap:active{
     box-shadow: 0px -1px #EE4217;
     transform: translateY(4px);
+  }
+
+  #eventknap:hover{
+    color: #f7f5ec;
   }
 
 
@@ -217,7 +222,7 @@ margin-bottom: 20px;
     border: none;
     border-radius: 10px;
     box-shadow: -5px  5px #233D4D;
-    padding-top: 0.2em;
+    padding-top: 0.em;
     margin-top: 30px;
   }
 
