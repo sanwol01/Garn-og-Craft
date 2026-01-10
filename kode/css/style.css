@@ -158,6 +158,10 @@ h1{
   text-shadow: 0px 0px 4px black; 
 }
 
+.tekstcentrereing{
+  text-align: center;
+}
+
 .banner div p{
     text-align: center;
     padding-bottom: 0.6em;
