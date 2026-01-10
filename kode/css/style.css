@@ -67,9 +67,9 @@ header nav{
   flex-wrap: nowrap;
   justify-content: space-evenly;
   font-size: 2em;
-  color: #FE7F2D;
+  color: #f7f5ec;
   padding: 1em 1.5em;
-  border-bottom: dashed #FD9753 2px;
+  border-bottom: dashed #f7f5ec 2px;
 }
 
 /*--------------- Brødkrummesti -----------------*/
@@ -743,12 +743,7 @@ header nav ul li{
   border-bottom: none;
 }
 
-.hovednav a:active{
-  text-decoration: underline;
-  font-weight: bold;
-  
 
-}
 
 .hovednav a:hover{
   color: #FE7F2D;
