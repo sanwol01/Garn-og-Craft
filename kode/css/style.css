@@ -74,7 +74,7 @@ header nav{
 
 .ikoner a{
   text-decoration: none;
-  color: #233D4D;
+  color: #f7f5ec;
 }
 
 /*--------------- Brødkrummesti -----------------*/
@@ -720,6 +720,7 @@ header nav{
 
 nav .ikoner{
 order: 1;
+
 }
 
 .ikoner i:hover{
@@ -729,6 +730,7 @@ order: 1;
 nav .menu{
   order: 2;
   margin-right: 3em;
+  
 }
 
 header nav ul li{
@@ -739,6 +741,10 @@ header nav ul li{
 .menu li a{
    color: #233D4D;
    white-space: nowrap;
+}
+
+.ikoner a{
+  color: #233D4D;
 }
 
 .logo{
